@@ -1,0 +1,88 @@
+﻿  Deck.cpp
+c:\users\daniel\source\repos\blackjack\blackjack\card.h(8): error C2011: 'Card': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\hand.h(5): error C2011: 'Hand': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\hand.h(4): note: see declaration of 'Hand'
+c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(9): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\deck.h(6): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(7): error C2065: 'm_Cards': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(18): error C3861: 'Clear': identifier not found
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(20): error C2027: use of undefined type 'Card'
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(20): error C2065: 'DIAMONDS': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(20): error C2065: 'HEARTS': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(22): error C2027: use of undefined type 'Card'
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(22): error C2065: 'ACE': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(22): error C2065: 'KING': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(24): error C2027: use of undefined type 'Card'
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(24): error C2440: 'static_cast': cannot convert from 'int' to 'std::rank'
+  c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(24): note: The target type has no constructors
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(24): error C2061: syntax error: identifier 'suit'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(24): error C3861: 'Add': identifier not found
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(31): error C2065: 'm_Cards': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(31): error C2672: 'std::random_shuffle': no matching overloaded function found
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(31): error C2780: 'void std::random_shuffle(_RanIt,_RanIt)': expects 2 arguments - 1 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(2633): note: see declaration of 'std::random_shuffle'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(31): error C2780: 'void std::random_shuffle(_RanIt,_RanIt,_RngFn &&)': expects 3 arguments - 1 provided
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\algorithm(2605): note: see declaration of 'std::random_shuffle'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(36): error C2065: 'm_Cards': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(38): error C2027: use of undefined type 'Hand'
+  c:\users\daniel\source\repos\blackjack\blackjack\hand.h(4): note: see declaration of 'Hand'
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(38): error C2065: 'm_Cards': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(39): error C2065: 'm_Cards': undeclared identifier
+c:\users\daniel\source\repos\blackjack\blackjack\deck.cpp(50): error C2664: 'void Deck::Deal(Hand &)': cannot convert argument 1 from 'GenericPlayer' to 'Hand &'
+  Game.cpp
+c:\users\daniel\source\repos\blackjack\blackjack\card.h(8): error C2011: 'Card': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\hand.h(5): error C2011: 'Hand': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\hand.h(4): note: see declaration of 'Hand'
+c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(9): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\deck.h(6): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(32): error C2664: 'void Deck::Deal(Hand &)': cannot convert argument 1 from 'Player' to 'Hand &'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(34): error C2664: 'void Deck::Deal(Hand &)': cannot convert argument 1 from 'House' to 'Hand &'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(72): error C2039: 'GetTotal': is not a member of 'Player'
+  c:\users\daniel\source\repos\blackjack\blackjack\player.h(3): note: see declaration of 'Player'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(72): error C2039: 'GetTotal': is not a member of 'House'
+  c:\users\daniel\source\repos\blackjack\blackjack\house.h(3): note: see declaration of 'House'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(76): error C2039: 'GetTotal': is not a member of 'Player'
+  c:\users\daniel\source\repos\blackjack\blackjack\player.h(3): note: see declaration of 'Player'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(76): error C2039: 'GetTotal': is not a member of 'House'
+  c:\users\daniel\source\repos\blackjack\blackjack\house.h(3): note: see declaration of 'House'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(87): error C2039: 'Clear': is not a member of 'Player'
+  c:\users\daniel\source\repos\blackjack\blackjack\player.h(3): note: see declaration of 'Player'
+c:\users\daniel\source\repos\blackjack\blackjack\game.cpp(88): error C2039: 'Clear': is not a member of 'House'
+  c:\users\daniel\source\repos\blackjack\blackjack\house.h(3): note: see declaration of 'House'
+  Hand.cpp
+c:\users\daniel\source\repos\blackjack\blackjack\hand.cpp(53): error C3867: 'Card::GetValue': non-standard syntax; use '&' to create a pointer to member
+c:\users\daniel\source\repos\blackjack\blackjack\hand.cpp(53): error C2678: binary '==': no operator found which takes a left-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(284): note: could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(278): note: or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(272): note: or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\system_error(266): note: or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(331): note: or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(326): note: or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) noexcept'
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\exception(321): note: or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) noexcept'
+  c:\users\daniel\source\repos\blackjack\blackjack\hand.cpp(53): note: while trying to match the argument list '(overloaded-function, Card::rank)'
+  main.cpp
+c:\users\daniel\source\repos\blackjack\blackjack\card.h(8): error C2011: 'Card': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\hand.h(5): error C2011: 'Hand': 'class' type redefinition
+  c:\users\daniel\source\repos\blackjack\blackjack\hand.h(4): note: see declaration of 'Hand'
+c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(9): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\deck.h(6): error C2504: 'Hand': base class undefined
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(53): error C2027: use of undefined type 'Card'
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(54): error C2027: use of undefined type 'Card'
+  c:\users\daniel\source\repos\blackjack\blackjack\card.h(7): note: see declaration of 'Card'
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(63): error C2039: 'm_Cards': is not a member of 'GenericPlayer'
+  c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(7): note: see declaration of 'GenericPlayer'
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(65): error C2039: 'm_Cards': is not a member of 'GenericPlayer'
+  c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(7): note: see declaration of 'GenericPlayer'
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(69): error C2039: 'GetTotal': is not a member of 'GenericPlayer'
+  c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(7): note: see declaration of 'GenericPlayer'
+c:\users\daniel\source\repos\blackjack\blackjack\main.cpp(70): error C2039: 'GetTotal': is not a member of 'GenericPlayer'
+  c:\users\daniel\source\repos\blackjack\blackjack\genericplayer.h(7): note: see declaration of 'GenericPlayer'
+  Generating Code...
