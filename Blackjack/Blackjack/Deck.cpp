@@ -1,13 +1,11 @@
 #include "Deck.h"
-
-
-
 Deck::Deck()
 {
 	m_Cards.reserve(52);
 	Populate();
-}
 
+
+}
 
 Deck::~Deck()
 {
@@ -21,10 +19,13 @@ void Deck::Populate()
 	{
 		for (int j = Card::ACE; j <= Card::KING; ++j)
 		{
-			Add(new Card(static_cast<Card::rank>(j), static_cast<Card::suit(i)));
+			Add(new Card(static_cast<Card::rank>(j), static_cast<Card::suit>(i)));
 		}
 	}
 }
+
+
+
 
 void Deck::Shuffle()
 {

@@ -1,11 +1,10 @@
 #pragma once
 #include "Deck.h"
-#include "GenericPlayer.h"
 #include "Player.h"
 #include "House.h"
-#include <iostream>
 class Game
 {
+private:
 	Deck m_Deck;
 	House m_House;
 	vector<Player> m_Players;

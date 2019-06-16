@@ -1,17 +1,14 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <vector>
 #include "Hand.h"
 using namespace std;
 class GenericPlayer :
 	public Hand
 {
-	friend ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
+	
 public:
 	GenericPlayer(const string& name = "");
 	virtual ~GenericPlayer();
-
+	friend ostream& operator<<(ostream& os, const GenericPlayer& aGenericPlayer);
 	//checks if the generic player wants to keep hitting
 
 	virtual bool isHitting() const = 0;

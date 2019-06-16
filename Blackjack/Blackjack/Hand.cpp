@@ -1,7 +1,5 @@
 #include "Hand.h"
 
-
-
 Hand::Hand()
 {
 	//reserves 7 hands for 7 players.
@@ -50,7 +48,7 @@ int Hand::GetTotal() const
 	bool hasAce = false;
 	for (iter = m_Cards.begin(); iter != m_Cards.end(); ++iter)
 	{
-		if ((*iter)->GetValue == Card::ACE)
+		if ((*iter)->Card::ACE)
 			hasAce = true;
 	}
 	//treating Ace as '11' because wee already have treated it as '1'

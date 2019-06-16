@@ -1,14 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include "Card.h"
-#include "Deck.h"
 #include "Game.h"
-#include "GenericPlayer.h"
-#include "Hand.h"
-#include "Player.h"
-#include "House.h"
-
 using namespace std;
 
 ostream& operator<<(ostream& os, const Card& aCard);
@@ -56,7 +46,7 @@ int main()
 		return os;
 	}
 
-	/*ostream& operator<<(ostream & os, const GenericPlayer & aGenericPlayer)
+	ostream& operator<<(ostream & os, const GenericPlayer & aGenericPlayer)
 	{
 		os << aGenericPlayer.m_Name << ":\t";
 		vector<Card*>::const_iterator pCard;
@@ -66,10 +56,11 @@ int main()
 			{
 				os << *(*pCard) << "\t";
 			}
-			if (aGenericPlayer.GetTotal != 0)
+			if (aGenericPlayer.GetTotal() != 0)
 				cout << "(" << aGenericPlayer.GetTotal() << ")";
 		}
 		else os << "<empty>";
 		return os;
 	}
-	*/
+	
+	

@@ -1,5 +1,4 @@
 #include "Game.h"
-#include <iostream>
 using namespace std;
 
 
@@ -10,7 +9,7 @@ Game::Game(const vector<string>& names)
 	{
 		m_Players.push_back(Player(*pName));
 	}
-	srand(time(0));
+	srand((unsigned int)time(NULL)); //casting because time returns int64 and srand is an int32
 	m_Deck.Populate();
 	m_Deck.Shuffle();
 
